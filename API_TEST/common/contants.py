@@ -33,7 +33,7 @@ class GetPath:
 
     # report_path 路径
     def get_report_path(self):
-        return os.path.join(self.base_path,'reports')
+        return os.path.join(self.base_path,'reports',"API测试报告.html")
 
     #testcase_path 路径
     def get_testcase_path(self):
@@ -43,4 +43,4 @@ class GetPath:
 if __name__ == '__main__':
     # a =GetPath().get_datas_path()
     # print(a)
-    print(GetPath().__dict__)
+    print(GetPath().get_report_path())

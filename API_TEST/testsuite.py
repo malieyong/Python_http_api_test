@@ -6,6 +6,7 @@
 # @function : 测试集->收集->执行
 """
 import unittest
+import HTMLTestRunnerNew
 # from testcase.test_login import TestLogin
 from testcase.test_recharge import TestRecharge
 # from testcase.test_register import TestRegister
@@ -28,4 +29,11 @@ test_suite.addTest(test_loader.loadTestsFromTestCase(TestRecharge))     # 充值
 # runner.run(test_suite)
 
 #执行测试用例，并输出测试报告
-BeautifulReport(test_suite).report(description='API接口测试', filename='API测试报告', log_path=GetPath().get_report_path())
+# BeautifulReport(test_suite).report(description='API接口测试', filename='API测试报告', log_path=GetPath().get_report_path())
+
+
+
+
+with open(GetPath().get_report_path(), mode='wb+') as file:
+    file_test = HTMLTestRunnerNew.HTMLTestRunner(file, description='api测试报告_2', title='api测试报告_2', tester='MLY-ZONE')
+    file_test.run(test_suite)
