@@ -16,7 +16,7 @@ from common.loggers import Log
 from common.do_excel import Do_Excel
 from common.contants import GetPath
 from common.basic_data import Context
-from testcase.mysql_datas import SelectPhone
+# from testcase.mysql_datas import SelectPhone
 
 datas, sheet_name = Runner('recharge').get_execl_datas()
 get_do_excel = Do_Excel(GetPath().get_datas_path())

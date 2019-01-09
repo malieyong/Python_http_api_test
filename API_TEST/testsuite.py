@@ -8,9 +8,10 @@
 import unittest
 import HTMLTestRunnerNew
 # from testcase.test_login import TestLogin
-from testcase.test_recharge import TestRecharge
 # from testcase.test_register import TestRegister
-from BeautifulReport import BeautifulReport
+# from BeautifulReport import BeautifulReport
+
+from testcase.test_recharge import TestRecharge
 from common.contants import GetPath
 
 
